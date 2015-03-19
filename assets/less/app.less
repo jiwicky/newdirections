@@ -1,0 +1,256 @@
+/*!
+ * Roots 6.4.0
+ */
+@import "bootstrap/bootstrap.less";
+@import "_carousel.less";
+@import "_global.less";
+
+.skybox {
+   text-align: center; 
+   margin: 10px 0 0 0; 
+   background-color: rgba(255,255,255,1);
+   padding: 0 10px 10px 10px; 
+   color: @brand-primary; 
+   font-size: 16px; 
+   font-family: @headings-font-family; 
+   line-height: 16px; 
+   //float:left; 
+   //box-shadow: 5px 5px 15px rgba(0,0,0, .2);
+   }
+
+.skybox p:nth-of-type(2) {font-size: 24px}
+.skybox span {color: @accent;}
+
+.single h1 {font-size: 32px; margin-top: 10px}
+.single .featured-single {margin-bottom: 15px; }
+
+.clipboard {display:none;}
+
+.home-window, .new-patient-box, .latest-post-box, .home-event-calendar {
+   
+   border-bottom: 1px solid @brand-primary; 
+   background-color: rgba(255,255,255,.6); 
+   margin-bottom: 10px; 
+   overflow:hidden; 
+   position:relative;
+   //margin: auto -10px;
+}
+
+.services-tile {margin-bottom: 15px}
+
+.home-event-calendar, .contact-home {padding: 10px}
+
+.service-box {
+   background-color: rgba(255,255,255,.6); 
+   border-radius: 10px; 
+   border: 2px solid @brand-primary; 
+   height: 160px; 
+   overflow:hidden
+}
+
+.staff {}
+
+.new-patients-button {
+   background: linear-gradient(to bottom,  #c95f0a 0%,#e0a473 7%,#c95f0a 27%,#c95f0a 100%);
+   color: white; 
+   font-size: 20px; 
+   font-weight: 400; 
+   padding: 20px; 
+   border-radius: 10px; 
+   box-shadow: 2px 2px 5px #000; 
+   border: 2px solid white; 
+   margin: 0 35px 15px 0; 
+   text-align:center; 
+   width: 250px; 
+   font-family: 'Comfortaa'; 
+   float:right;
+   background-color: @accent}
+
+.new-patients-button span {display:block; margin-top: 5px}
+
+.new-patients-button a:link, .new-patients-button a:visited {color: white}
+
+.new-patients-button:hover {background-color: @brand-primary}
+
+.events-box, .contact-box {margin-top: 15px}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Smallest Screen Only */
+@media (max-width: @screen-sm) {
+   .new-patients-button {float:none; margin: 10px auto}
+   //.container {margin-right: -10px; margin-left: -10px}
+}
+
+
+@media (min-width: @screen-sm) {
+   .new-directions-nav .navbar {padding-left: 60px; position:relative; margin-top:-80px; z-index: 9999}
+}
+
+@media (min-width: @screen-md) { 
+
+   .home-window, .new-patient-box, .latest-post-box, .home-event-calendar, .contact-home {
+   border-radius: 10px; 
+   border: 2px solid @brand-primary; 
+   background-color: rgba(255,255,255,.6); 
+   margin-bottom: 10px; 
+   overflow:hidden; 
+   position:relative;
+   //margin: auto -10px;
+}
+.navbar a {height: auto; display: block}
+
+.mark {float:left; z-index: 10000; position:relative; display: block}
+
+.skybox {
+   text-align: center; 
+   margin: 10px 0; 
+   background-color: rgba(255,255,255,1);
+   padding: 20px 10px 10px 10px; 
+   color: @brand-primary; 
+   font-size: 22px; 
+   font-family: @headings-font-family; 
+   line-height: 14px; 
+   float:left; 
+   box-shadow: 5px 5px 15px rgba(0,0,0, .2);
+   }
+
+.skybox p:nth-of-type(2) {font-size: 24px}
+.skybox span {color: @accent;}
+
+//#the-list{width:50%}
+.main {padding: 0 20px}
+.single .main {padding:20px 30px;}
+
+.post-thumbnail {width: 40%; float:left; margin: 5px 10px 0 0;}
+.phone {color: @accent; font-size: 24px; }
+.new-patient-box p {margin-top: 10px; line-height: 19px; font-size: 18px; margin-bottom: 10px}
+
+
+
+/* ==========================================================================
+ HOME PAGE
+   ========================================================================== */
+
+.home {line-height: 18px; font-size: 16px}
+
+.home-event-calendar {
+   padding-bottom: 10px; 
+   padding-top: 10px;
+}
+
+.latest-post-box p {padding: 0 10px 5px 10px}
+.latest-post-box h2, .latest-post-box img {padding-left:10px}
+.latest-post-box h2 {margin-top: 10px; color: @accent; font-size: 22px;}
+.clear {clear:both;}
+
+.events-box h2, .contact-box h2 {font-size: 20px; color: white; background-color: @brand-primary; overflow:hidden; display:block; padding: 10px; margin:0}
+
+.contact-home h2, .home-event-calendar h2 {margin: -10px -10px 15px -10px; padding-left: 15px}
+
+.service-box {width: 100%; overflow:hidden;}
+
+.service-link {height: 30px; margin-bottom: 8px;}
+.overlay {position:absolute; bottom:0; background-color:rgba(255,255,255,.7); padding: 0 10px}
+
+.main {background-color: rgba(255,255,255,.6);  border-radius: 20px; border: 2px solid @brand-primary;}
+
+.home .main {background-color: transparent; margin-left: 0px; border: none; border-radius: 0}
+.clipboard {position: relative; z-index: 1000; top:-35px; float:left; display:block}
+
+.new-patient-box h3 {background-color: @brand-primary; color:white; display:block;margin:0; padding-left:200px; padding-top: 5px; padding-bottom:5px; font-size: 20px; }
+
+.latest-post-box h3 {background-color: @brand-primary; color:white; display:block;margin:0; padding-left:25px; padding-top: 5px; padding-bottom:5px; font-size: 20px; }
+
+.new-patient-box {height:190px}
+.services-heading h2{margin-top: 7px; padding-left: 15px; color: white; font-size: 30px}
+.services-heading {background: linear-gradient(to right, rgba(57,57,57,1) 0%, transparent 45%); margin-bottom: 10px; border-radius: 5px}
+
+.staff .main {padding-right: 50px}
+
+.content-info { }
+
+.logo-sm {display:none}
+.logo {display:block; float: left; position:relative; top:25px; left: -25px; background: none}
+
+.logo img {width: 100%; margin: 0 auto}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content {}
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main {padding-bottom: 20px;}
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {background-color:#393939; margin-top: 10px; border-top-left-radius: 20px; border-top-right-radius: 20px}
+footer a:link, footer a:visited {color: white; padding: 2px 5px; font-size: 14px}
+.pages-2 ul li {display:inline; list-style: disc;}
+.copyright {float: right; color: white; font-size: .8em; margin-right: 15px}
+}
+
+
+
+@media (min-width: @screen-lg) { }
+
+//Between medium and large screens
+@media (min-width: @screen-md) and (max-width: @screen-lg) {
+   .new-directions-nav .navbar {clear:both; padding:0;}
+   .logo {width: 45%; margin-left: 10px; float: left; margin-top: 0px;}
+   .mark img {width: 100%}
+   .mark {padding: 0; margin:0; width: 140px}
+   .skybox {width: 37%; font-size: 16px}
+   .new-patients-button {width: 210px; margin-left: 139px; float: none; padding: 21px 15px; }
+   .new-directions-nav .navbar {padding-left: 50px; position:relative; margin-top:-55px; z-index: 9999;}
+   .nav > li > a {padding: 10px 11px; font-size: 15px; line-height: 14px }
+   .header-panel {padding-top: 10px}
+   .navbar-nav{height: 35px}
+   .navbar{min-height: 35px}
+   .new-patient-box h3 {padding-left: 120px;}
+   .overlay {position:relative; background-color:rgba(255,255,255,1); margin-top: -70px; padding: 0 10px}
+   .service-box {height: 130px}
+}
+
+

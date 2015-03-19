@@ -1,0 +1,22 @@
+body {background-image: url(../img/bggrade_slice.jpg);
+	background-color: #FFFFFF;
+	background-repeat: repeat-y;
+}
+
+
+
+.skybox {border: solid 2px #00395E;}
+
+.new-patient-box, .home-window, .latest-post-box, .home-event-calendar {background-color: white;}
+
+.overlay {background-color: #FFFFFF;}
+
+img {width: inherit;
+max-width: 100%;
+height: auto;}
+
+.services-heading h2 {color: #00395E;}
+
+.new-patients-button {background-color: #C95F0A;}
+
+.carousel-control.right {background: transparent;}

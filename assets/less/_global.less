@@ -1,0 +1,52 @@
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+.office {font-size: 20px; text-align:center; padding: 10px;}
+.office span {display:block}
+.hickory {border-right: 1px solid @brand-primary}
+.office-header {margin-bottom: 10px}
+.address {font-size: 18px; line-height: normal}
+.page-header h1, h1.entry-title {font-size: 30px; margin-bottom: 15px}
+.page-header {margin-bottom: 20px}
+h2.entry-title {font-size: 25px}
+.single h1.entry-title {
+  margin: 15px 150px 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid @accent;
+}
+
+h2 {font-size: 24px}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {background: linear-gradient(to right, #add1ea 0%, #ffffff 45%, #ffffff 73%, #add1ea 73%,#add1ea 87%,#ffffff 87%); }
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+img {max-width: 100%; height: auto; overflow: hidden}
+.navbar {font-weight: normal; position: fixed; top:0; width: 100%;}
+.logo-sm {text-align: center;}
+.logo-sm img{width: 95%; margin: 60px auto 0 auto;}
+.logo {display:none;}
+.mark {display:none}
+.navbar a {height: 40px; display: block;}
+.navbar-collapse.in {overflow-y: visible;}
+.navbar-collapse {max-height: none;}
+.navbar-default .navbar-nav > .active > a .caret{border-top-color: @brand-primary; border-bottom-color: @brand-primary;}
+
+/* Smallest Screen Only */
+@media (max-width: @screen-sm) {
+   //.container {margin-right: -10px; margin-left: -10px}
+   .header_panel {background-color: white; border-bottom: 1px solid @brand-primary; box-shadow: 1px 1px 1px #ccc; margin-bottom: 10px; margin-left: -10px; margin-right: -10px}
+   .navbar {margin-left: -20px}
+
+}
