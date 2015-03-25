@@ -68,7 +68,18 @@ module.exports = function(grunt) {
         'assets/css/main.min.css',
         'assets/js/scripts.min.js'
       ]
+    },
+browserSync: {
+    dev: {
+        bsFiles: {
+            src : ['assets/css/*.css', 'assets/js/*.js', '**/*.php'],
+            watchTask: true
+        },
+        options: {
+            proxy: "http://localhost:8888/newdirections",
+        }
     }
+}
   });
 
   // Load tasks
@@ -76,15 +87,18 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-recess');
+
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
     'recess',
     'uglify',
-    'version'
+    'version',
+    'browserSync',
   ]);
   grunt.registerTask('dev', [
     'watch'
