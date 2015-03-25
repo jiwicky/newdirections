@@ -5,23 +5,18 @@
 @import "_carousel.less";
 @import "_global.less";
 
-* {line-height: 26px; font-weight: 300}
-
 .skybox {
-   text-align: center;
+   text-align: center; 
    margin: 10px 0 0 0; 
    background-color: rgba(255,255,255,1);
    padding: 0 10px 10px 10px; 
    color: @brand-primary; 
    font-size: 16px; 
    font-family: @headings-font-family; 
-   line-height: 16px;
+   line-height: 16px; 
    //float:left; 
    //box-shadow: 5px 5px 15px rgba(0,0,0, .2);
    }
-
-#announcements {display: hidden; text-align: center; background: @accent; min-height: 35px; height: auto;padding: 2px 10px; box-shadow: 3px 3px 3px rgba(0,0,0,.3)}
-#announcements .wrapper .sap_message p{ margin: 0; color: #fff; font-weight: 500}
 
 .skybox p:nth-of-type(2) {font-size: 24px}
 .skybox span {color: @accent;}
@@ -71,8 +66,6 @@
    float:right;
    background-color: @accent}
 
-
-
 .new-patients-button span {display:block; margin-top: 5px}
 
 .new-patients-button a:link, .new-patients-button a:visited {color: white}
@@ -114,23 +107,24 @@
 
 .mark {float:left; z-index: 10000; position:relative; display: block}
 
-.skybox, .quote {
+.skybox {
+   text-align: center; 
+   margin: 10px 0; 
    background-color: rgba(255,255,255,1);
    padding: 20px 10px 10px 10px; 
    color: @brand-primary; 
-   text-align: center;  
+   font-size: 22px; 
    font-family: @headings-font-family; 
+   line-height: 14px; 
+   float:left; 
    box-shadow: 5px 5px 15px rgba(0,0,0, .2);
    }
-
-.skybox {font-size: 22px; line-height: 14px; float:left; margin: 10px 0;}
-.quote {margin-top: 15px; margin-bottom: 15px}
 
 .skybox p:nth-of-type(2) {font-size: 24px}
 .skybox span {color: @accent;}
 
 //#the-list{width:50%}
-.main {padding: 0 40px}
+.main {padding: 0 20px}
 .single .main {padding:20px 30px;}
 
 .post-thumbnail {width: 40%; float:left; margin: 5px 10px 0 0;}

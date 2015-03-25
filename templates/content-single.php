@@ -10,9 +10,6 @@
         get_template_part('templates/entry-meta');
         } ?>
     </header>
-
-    <div class="quote col-lg-10 col-md-offset-1"><p><?php the_field('quote'); ?></p></div>
-
     <div class="featured-single"><?php the_post_thumbnail('full' , array('class' => 'col-md-12 img_responsive')); ?></div>
     <div class="entry-content">
       <?php the_content(); ?>

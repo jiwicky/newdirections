@@ -1,5 +1,5 @@
 <div class="contact-home col-md-12">
-	<h2>Locations</h2>
+	<h2>2 Locations</h2>
 		<div class="hickory office col-md-6">
 			<span class="office-header">Hickory Office</span>
 			<span class="phone">828-267-1740</span>

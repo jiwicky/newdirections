@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '37538a274170005921ebec2f09e39d75');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '59de83102c446f3b85cc50c8c89c34ae');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -68,7 +68,7 @@ if (GOOGLE_ANALYTICS_ID) {
 //Google Fonts
 
   function load_fonts () {
-    wp_register_style ('googleFonts', 'http://fonts.googleapis.com/css?family=Muli:300,400,700|Comfortaa:400,300,300italic,400italic');
+    wp_register_style ('googleFonts', 'http://fonts.googleapis.com/css?family=Muli:400,700,300|Comfortaa:400,300,300italic,400italic');
         wp_enqueue_style ('googleFonts');
 
   }
