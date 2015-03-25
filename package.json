@@ -8,17 +8,20 @@
     "url": "git://github.com/roots/roots.git"
   },
   "bugs": {
-    "url" : "https://github.com/roots/roots/issues"
+    "url": "https://github.com/roots/roots/issues"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://opensource.org/licenses/MIT"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
   "engines": {
     "node": ">= 0.10.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-browser-sync": "^2.0.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-uglify": "~0.2.2",
