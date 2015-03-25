@@ -3,9 +3,9 @@ body {background-image: url(../img/bggrade_slice.jpg);
 	background-repeat: repeat-y;
 }
 
+* {font-size: large;}
 
-
-.skybox {border: solid 2px #00395E;}
+.skybox {border: solid 2px #00395E; float:right;}
 
 .new-patient-box, .home-window, .latest-post-box, .home-event-calendar {background-color: white;}
 
@@ -20,3 +20,7 @@ height: auto;}
 .new-patients-button {background-color: #C95F0A;}
 
 .carousel-control.right {background: transparent;}
+
+.logo {display:block; }
+
+
