@@ -117,3 +117,9 @@ return $menu;
 }
 add_filter('nav_menu_css_class', 'roots_cpt_active_menu', 400);
 
+//Add Excerpts to Pages
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
