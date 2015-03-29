@@ -38,6 +38,8 @@
    margin-bottom: 25px;
 }
 
+.single .compass {float:right; margin-top: -28px; margin-right: -30px}
+
 #announcements {display: hidden; text-align: center; background: @accent; min-height: 35px; height: auto;padding: 2px 10px; box-shadow: 3px 3px 3px rgba(0,0,0,.3)}
 #announcements .wrapper .sap_message p{ margin: 0; color: #fff; font-weight: 500}
 
@@ -60,6 +62,11 @@
 }
 
 .services-tile {margin-bottom: 15px}
+.services-tile h2 {
+   padding-bottom: 10px;
+   border-bottom: 1px solid @accent;
+   font-weight: 300;
+}
 
 .home-event-calendar, .contact-home {padding: 10px}
 
@@ -72,6 +79,8 @@
 }
 
 .staff {}
+
+.phone, .phone a {color: @accent; font-size: 24px; }
 
 .new-patients-button {
    background: linear-gradient(to bottom,  #c95f0a 0%,#e0a473 7%,#c95f0a 27%,#c95f0a 100%);
@@ -126,6 +135,9 @@
    position:relative;
    //margin: auto -10px;
 }
+
+
+
 .navbar a {height: auto; display: block}
 
 .mark {float:left; z-index: 10000; position:relative; display: block}
@@ -138,7 +150,7 @@
    color: @brand-primary; 
    font-size: 22px; 
    font-family: @headings-font-family; 
-   line-height: 14px; 
+   line-height: 16px; 
    float:left; 
    box-shadow: 5px 5px 15px rgba(0,0,0, .2);
    }
@@ -151,7 +163,7 @@
 .single .main {padding:20px 30px;}
 
 .post-thumbnail {width: 40%; float:left; margin: 5px 10px 0 0;}
-.phone {color: @accent; font-size: 24px; }
+
 .new-patient-box p {margin-top: 10px; font-size: 24px; margin-bottom: 10px}
 .entry-content p {margin-right: 15px; margin-left: 15px}
 
@@ -175,7 +187,8 @@
 
 .events-box h2, .contact-box h2 {font-size: 20px; color: white; background-color: @brand-primary; overflow:hidden; display:block; padding: 10px; margin:0}
 
-.contact-home h2, .home-event-calendar h2 {margin: -10px -10px 15px -10px; padding-left: 15px}
+.home-event-calendar h2 {margin: -10px -10px 15px -10px; padding-left: 15px}
+.contact-home h2  {margin: -10px -10px 0 -10px; padding-left: 15px}
 
 .service-box {width: 100%; overflow:hidden;}
 
@@ -266,6 +279,7 @@ footer a:link, footer a:visited {color: white; padding: 2px 5px; font-size: 14px
    .mark img {width: 100%}
    .mark {padding: 0; margin:0; width: 140px}
    .skybox {width: 37%; font-size: 16px}
+   .new-patient-box p {font-size: 18px}
    .new-patients-button {width: 210px; margin-left: 139px; float: none; padding: 21px 15px; }
    .new-directions-nav .navbar {padding-left: 50px; position:relative; margin-top:-55px; z-index: 9999;}
    .nav > li > a {padding: 10px 11px; font-size: 15px; line-height: 14px }
@@ -275,6 +289,7 @@ footer a:link, footer a:visited {color: white; padding: 2px 5px; font-size: 14px
    .new-patient-box h3 {padding-left: 120px;}
    .overlay {position:relative; background-color:rgba(255,255,255,1); margin-top: -70px; padding: 0 10px}
    .service-box {height: 130px}
+   .quote {margin-top: 0}
 }
 
 

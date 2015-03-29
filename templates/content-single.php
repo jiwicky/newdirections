@@ -6,12 +6,15 @@
   <article <?php post_class(); ?>>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
+      <!-- Compass -->
+      <div class="single compass"><img class="compass" src="<?php echo get_template_directory_uri() ?>/assets/img/compass_iso.png" alt="" /></div>
+
       <?php if(get_post_type() != 'services'){
         get_template_part('templates/entry-meta');
         } ?>
     </header>
 
-    <div class="quote col-lg-10 col-md-offset-1"><p><?php the_field('quote'); ?></p></div>
+    <div class="quote col-md-10 col-md-offset-1"><p><?php the_field('quote'); ?></p></div>
 
     <div class="featured-single"><?php the_post_thumbnail('full' , array('class' => 'col-md-12 img_responsive')); ?></div>
     <div class="entry-content">
