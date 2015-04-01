@@ -8,7 +8,7 @@
 
 
 <?php 
-$args = array( 'post_type' => 'services', 'posts_per_page' => 12);
+$args = array('post_type' => 'services');
 
 
 $loop = new WP_Query( $args );

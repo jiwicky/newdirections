@@ -3,11 +3,12 @@
 Template Name: Services Archive
 */
 ?>
-
+<!-- 
 <div class="col-sm-12">
 
 <h1>Services</h1>
-
+ -->
+<?php get_template_part('templates/page', 'header'); ?>
 <?php
 $loop = new WP_Query( array( 'post_type' => 'services' ) );
 while ( $loop->have_posts() ) : $loop->the_post();
