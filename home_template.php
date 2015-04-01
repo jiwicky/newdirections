@@ -17,7 +17,7 @@ Template Name: Home Template
 
 <div class="new-patients-button">
 
-<a href="new-patient-area" class=""> WHAT TO EXPECT </a>
+<a href="new-client-area" class=""> WHAT TO EXPECT </a>
 </div>
 </div>
 <?php get_template_part('templates/latest-post-loop'); ?>
