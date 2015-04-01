@@ -6,7 +6,7 @@
 		if ($latest_post->have_posts()) : while ($latest_post->have_posts()) : $latest_post->the_post(); ?>	
  <a href="<?php the_permalink()?>"><h2><?php the_title();?> </h2></a>
 
-   <a href="<?php the_permalink()?>"><?php the_post_thumbnail('full', array('class' => ' img-responsive post-thumbnail'));?></a>
+   <div class="latest-post-thumb"><a href="<?php the_permalink()?>"><?php the_post_thumbnail('full', array('class' => ' img-responsive post-thumbnail'));?></a></div>
 
 
    <?php the_excerpt();?>

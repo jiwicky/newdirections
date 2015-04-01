@@ -5,6 +5,8 @@
 @import "_carousel.less";
 @import "_global.less";
 
+// .home-window img {width: 105%!important; max-width: 105%!important; height: auto; overflow:hidden; text-align:center}
+
 .skybox {
    text-align: center; 
    margin: 10px 0 0 0; 
@@ -105,8 +107,43 @@
 
 .new-patients-button:hover {background-color: @brand-primary}
 
-.events-box, .contact-box {margin-top: 15px}
+.events-box, .contact-box {margin-top: 10px}
 
+.services-appointment-button   {
+   background: linear-gradient(to bottom,  #c95f0a 0%,#e0a473 7%,#c95f0a 27%,#c95f0a 100%);
+   color: white; 
+   font-size: 16px; 
+   font-weight: 400; 
+   padding: 15px; 
+   border-radius: 10px; 
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, .5); 
+   border: 2px solid white; 
+   margin: 5px 15px 0 0; 
+   text-align:center; 
+   width: 250px; 
+   font-family: 'Comfortaa'; 
+   float:right;
+   background-color: @accent
+}
+.services-appointment-button a {color: white}
+
+.back-all-services {
+   background: linear-gradient(to bottom,  #c95f0a 0%,#e0a473 7%,#c95f0a 27%,#c95f0a 100%);
+   color: white; 
+   font-size: 13px; 
+   font-weight: 400; 
+   padding: 3px 10px; 
+   border-radius: 10px; 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .5); 
+   border: 2px solid white; 
+   text-align:center; 
+   font-family: 'Comfortaa'; 
+   background-color: @accent;
+   width: 150px;
+   margin-top: -40px; margin-left: -40px;
+}
+
+.back-all-services a {color: white}
 
 
 
@@ -138,7 +175,6 @@
 }
 
 
-
 .navbar a {height: auto; display: block}
 
 .mark {float:left; z-index: 10000; position:relative; display: block}
@@ -165,7 +201,7 @@
 
 .post-thumbnail {width: 40%; float:left; margin: 5px 10px 0 0;}
 
-.new-patient-box p {margin-top: 10px; font-size: 24px; margin-bottom: 10px; font-weight: 500}
+.new-patient-box p {margin-top: 10px; font-size: 22px; margin-bottom: 5px; ; text-align:center;; margin-right: 20px; font-weight: 500}
 .entry-content p {margin-right: 15px; margin-left: 15px}
 
 
@@ -206,9 +242,9 @@
 
 .latest-post-box h3 {background-color: @brand-primary; color:white; display:block;margin:0; padding-left:25px; padding-top: 5px; padding-bottom:5px; font-size: 20px; }
 
-.new-patient-box {height:220px}
+.new-patient-box {height:200px}
 .services-heading h2{margin-top: 7px; padding-left: 15px; color: white; font-size: 30px}
-.services-heading {background: linear-gradient(to right, rgba(57,57,57,1) 0%, transparent 45%); margin-bottom: 10px; border-radius: 5px}
+.services-heading {background: linear-gradient(to right, rgba(57,57,57,1) 0%, transparent 65%); margin-bottom: 15px; border-radius: 5px; margin-top: 15px}
 
 .staff .main {padding-right: 50px}
 
@@ -219,6 +255,8 @@
 
 .logo img {width: 100%; margin: 0 auto}
 
+.latest-post-thumb {float:left; width: 150px; height: 150px; overflow:hidden; margin-right: 15px}
+.latest-post-thumb img {width: 100%; height: auto}
 
 /* ==========================================================================
    Content
@@ -264,8 +302,8 @@
    Footer
    ========================================================================== */
 
-footer {background-color:#393939; margin-top: 10px; border-top-left-radius: 20px; border-top-right-radius: 20px}
-footer a:link, footer a:visited {color: white; padding: 2px 5px; font-size: 14px}
+footer.footer {background-color:#393939; margin-top: 10px; border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 15px}
+footer a:link, footer a:visited {color: white; font-size: 14px; padding: 0 15px}
 .pages-2 ul li {display:inline; list-style: disc;}
 .copyright {float: right; color: white; font-size: .8em; margin-right: 15px}
 }

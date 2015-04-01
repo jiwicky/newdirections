@@ -1,5 +1,5 @@
 <?php if(get_post_type() == 'services'){ ?>
-  <a href="<?php echo get_post_type_archive_link('services');?>">Back to All Services</a>
+  <div class="back-all-services"><a href="<?php echo get_post_type_archive_link('services');?>">Back to All Services</a></div>
 <?php } ?>
 
 <?php while (have_posts()) : the_post(); ?>
@@ -24,8 +24,13 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
+          <?php if(get_post_type() == 'services') { ?>
+             <div class="services-appointment-button"> <a href="<?php echo get_site_url();?>/new-client-area">Schedule an Appointment</a>
+    <?php  } ?>
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
+
+
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
